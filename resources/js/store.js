@@ -6,6 +6,9 @@ import outlet from './stores/outlet.js'
 import courier from './stores/courier.js'
 import product from './stores/product.js'
 import user from './stores/user.js'
+import expenses from './stores/expenses.js'
+import notification from './stores/notification.js'
+import customer from './stores/customer.js'
 
 Vue.use(Vuex)
 
@@ -15,7 +18,10 @@ const store = new Vuex.Store({
         outlet,
         courier,
         product,
-        user
+        user,
+        expenses,
+        notification,
+        customer
     },
     state: {
         token: localStorage.getItem('token'),
